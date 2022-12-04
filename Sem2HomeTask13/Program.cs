@@ -6,10 +6,10 @@ int number = int.Parse(Console.ReadLine() ?? "0");
 if (number > 99)
 {
     //Превращаем число в массив
-    Char[]dijits = number.ToString(). ToCharArrey().;
+    Char[]digits = number.toString().toChar(Arrey).;
 
     //Выводим в консоле результат
-    Console.WriteLine(dijits[2]);
+    Console.WriteLine(digits[2]);
 }
 else
 {
