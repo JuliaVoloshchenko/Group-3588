@@ -1,7 +1,7 @@
 ﻿//Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом
 int num = ReadData("Введите пятизначное число: ");
 bool result = PalinTest(num);
-PrintData(result);
+PrintData("Является ли число палиндромом?",result);
 
 //Метод сравнения
 bool PalinTest(int num)
@@ -21,5 +21,5 @@ int ReadData(string msg)
 // Метод вывода данных
 void PrintData(string msg, bool result)
 {
-    Console.WriteLine(result);
+    Console.WriteLine(msg + result);
 }
