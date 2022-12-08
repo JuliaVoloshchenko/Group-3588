@@ -1,4 +1,5 @@
-﻿int number = int.Parse(Console.ReadLine()??"0");
+﻿//Напишите программу, которая принимает на вход число и проверяет кратно ли оно одновременно 7 и 23
+int number = int.Parse(Console.ReadLine()??"0");
 //Console.WriteLine(number1);
 
 int result1 = number%7;

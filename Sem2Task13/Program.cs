@@ -1,4 +1,5 @@
-﻿//int number1 = int.Parse(Console.ReadLine()??"0");
+﻿//Написать программу, которая будет примать 2 числа и выводить, является ли второе число кратным первому, если нет то выводит остаток от деления
+//int number1 = int.Parse(Console.ReadLine()??"0");
 //int number2 = int.Parse(Console.ReadLine()??"0");
 
 //int result = number2
