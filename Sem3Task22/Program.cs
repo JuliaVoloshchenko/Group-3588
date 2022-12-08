@@ -1,4 +1,5 @@
-﻿int number = ReadData("Введите число: ");
+﻿//Написать программу, которая принимает на вход число N и выдает таблицу квадратов от 1 до N
+int number = ReadData("Введите число: ");
 
 string outLine = LineBuilder(number, 1 );
 PrintData("", outLine);
