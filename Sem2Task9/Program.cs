@@ -1,4 +1,5 @@
-﻿System.Random numberSintezator = new System.Random();
+﻿//Неписать программу, которая выводит случайное число из отрезка 10-99 и показывает наибольшее число
+System.Random numberSintezator = new System.Random();
 
 int number = numberSintezator.Next(10, 100);
 
