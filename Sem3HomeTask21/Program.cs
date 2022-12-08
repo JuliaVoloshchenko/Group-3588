@@ -6,6 +6,7 @@ int X2 = ReadData("Введите координату Х2: ");
 int Y2 = ReadData("Введите координату Y2: ");
 int Z2 = ReadData("Введите координату Z2: ");
 
+
 PrintData("Расстояние между точками: ", DistanceBetwPoints(X1, Y1, Z1, X2, Y2, Z2));
 
 
