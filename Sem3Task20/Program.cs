@@ -4,7 +4,7 @@ int Y1 = ReadData("Введите координату Y1: ");
 int X2 = ReadData("Введите координату Х2: ");
 int Y2 = ReadData("Введите координату Y2: ");
 
-
+PrintData("Расстояние между точками: ", DistanceBetweenPoints(X1, Y1, X2, Y2));
 
 // Метод читает данные от пользователя
 int ReadData(string msg)
@@ -26,6 +26,4 @@ void PrintData(string msg, double res)
     Console.WriteLine(msg + res);
 }
 
-
-PrintData("Расстояние между точками: ", DistanceBetweenPoints(X1, Y1, X2, Y2));
 
