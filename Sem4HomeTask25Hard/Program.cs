@@ -5,9 +5,9 @@ int number1 = ReadData("Введите число A:");
 int number2 = ReadData("Введите число B:");
 
 int res = Sum(number1, number2);
-int res = Dif(number1, number2);
-int res = Mult(number1, number2);
-int res = Divid(number1, number2);
+// int res = Dif(number1, number2);
+// int res = Mult(number1, number2);
+// int res = Divid(number1, number2);
 
 PrintData("Результат=" + res);
 
