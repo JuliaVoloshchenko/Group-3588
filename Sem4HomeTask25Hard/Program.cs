@@ -9,6 +9,7 @@ int res = Sum(number1, number2);
 // int res = Mult(number1, number2);
 // int res = Divid(number1, number2);
 
+
 PrintData("Результат=" + res);
 
 
