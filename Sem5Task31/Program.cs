@@ -1,45 +1,52 @@
 ﻿//Задайте массив из 12 элементов, заполненный случайными числами из промежутка [-9, 9]. Найдите сумму отрицательных и положительных элементов массива.
-
-int arrLen = ReadData("Введите длину массива:");
-int min = ReadData("Введите min значание:");
-int max = ReadData("Введите max значение:");
-
-int[] arr = GenArr(arrLen);
-
-PrintData("Сгененрированный массив:",arr);
-
-
-int ReadData(string msg)
 {
-    Console.WriteLine(msg);
-    return int.Parse(Console.ReadLine() ?? "0");
-}
+    int posetivSum = 0;
+    int negotivSum = 0;
 
-void PrintData(string res, int[] arr)
-{
-    Console.WriteLine(res);
-    PrintArr(arr);
-}
+    int[] testArr = GenArray(12, -9, 9);
+    NegotivPosetivSum(testArr);
+    Print1DArr(testArr);
+    PrintData("Сумма положительных чисел в массиве: ", posetivSum);
+    PrintData("Сумма отрицательных чисел в массиве: ", negotivSum);
 
-int[] GenArr(int num)
-{
-    int[] arr = new int[num];
-    int count1 = min;
-    int count2 = max;
-   
-    for (int i = 0; i < arr.Length; i++)
+    int[] GenArray(int len, int minValue, int maxValue)
     {
-        arr[i] = new Random().Next(min,max+1);
+        Random rnd = new Random();
+        int[] arr = new int[len];
+        for (int i = 0; i < arr.Length; i++)
+        {
+            arr[i] = new Random().Next(minValue, maxValue + 1);
+        }
+        return arr;
     }
-    return arr;
-}
 
-void PrintArr(int[] arr)
-{
-    Console.Write("[");
-    for (int i = 0; i < arr.Length-1; i++)
+    void PrintData(string res, int value)
     {
-        Console.Write(arr[i]+", ");
+        Console.WriteLine(res + value);
     }
-    Console.WriteLine(arr[arr.Length-1]+"]");
+
+    void NegotivPosetivSum(int[] arr)
+    {
+        for (int i = 0; i < arr.Length; i++)
+        {
+            if (arr[i] > 0)
+            {
+                posetivSum += arr[i];
+            }
+            else
+            {
+                negotivSum += arr[i];
+            }
+        }
+    }
+
+    //Печатае одномерный массив
+    void Print1DArr(int[] arr)
+    {
+        for (int i = 0; i < arr.Length - 1; i++)
+        {
+            Console.Write(arr[i] + ", ");
+        }
+        Console.WriteLine(arr[arr.Length - 1]);
+    }
 }
