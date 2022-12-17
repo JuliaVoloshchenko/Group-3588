@@ -1,15 +1,13 @@
 ﻿// Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 
-
+double MinValue = MaxValue;
+double MaxValue = MinValue;
 
 double[] arr = GenArray(15, 1, 100);
 Print1DArr(arr);
 MinMax(arr);
 PrintData(arr) = maxValue - minValue;
 
-
-double minValue = maxValue;
-double maxValue = minValue;
 
 double[] GenArray(double len, double minValue, double maxValue)
 {
@@ -31,7 +29,7 @@ void Print1DArr(double[] arr)
     Console.WriteLine(arr[arr.Length - 1]);
 }
 //Метод печати результата в консоль
-void PrintData(string res, double value)
+void PrintData(string res)
 {
     Console.WriteLine(res);
 }
