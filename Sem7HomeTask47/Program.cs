@@ -6,7 +6,7 @@ Random rnd = new Random();
 Fill2DArray(arr2D);
 Print2DArray(arr2D);
 
-// //Метод считывает данные введенные пользователем
+//Метод считывает данные введенные пользователем
 int ReadData(string line)
 {
     Console.Write(line);
@@ -30,7 +30,6 @@ void Print2DArray(double[,] matrix)
 //Метод генерации и заполнение двумерного массива
 void Fill2DArray(double[,] matrix)
 {
-
     for (int i = 0; i < m; i++)
     {
         for (int j = 0; j < n; j++)
